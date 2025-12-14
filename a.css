@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'C'; /* اسم الخط الأول */
   src: url('FONT/T.ttf') format('truetype');
@@ -68,10 +67,11 @@ transform: scale(0.95);
 
 /* الروابط */
 .social-bar{
+   width:100%;
     display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5PX 10PX;
+  padding: 8PX 10PX;
   position: relative;
   z-index: 99;
 }
@@ -82,8 +82,8 @@ transform: scale(0.95);
     display: flex;
     justify-content: center;
     gap: 15px; /* مسافة بين الروابط */
-   font-size:15% ;
-   font-weight: bold;
+
+ align-itmes: center;
     padding: 0;
 }
 
@@ -91,7 +91,9 @@ transform: scale(0.95);
     font-family: M;
     color: rgb(221, 157, 199);
     text-decoration: none;
-    font-size: 20px;
+    font-size:24px;
+   font-weight: bold;
+  white-space:nowrap;
 }
 
 .social-bar .csc ul li a:hover {
@@ -415,11 +417,16 @@ footer {
             /* --- الهواتف الصغيرة: أقل من 600px --- */
                       /* --- الهواتف الصغيرة: أقل من 600px --- */
 @media (min-width:360px) and (max-width: 480px)  {
-.social-bar .csc ul {
-    font-size: 8%;
-    gap: 10px;
 
-}
+  .social-bar .csc ul {
+    gap:15px;
+ 
+  }
+  .social-bar .csc ul li a{
+     font-weight: bold;
+    font-size:12px;
+  }
+  
       .video-overlay h4{
  padding: 5px 10px;
  font-size: 15px;
@@ -431,14 +438,17 @@ footer {
     }
     
 
+   
     .scrch {
-        top: 70%;
-        right:100px;
+      
+        top:60%;
+      
+        width: 80%;
       
   
     }
     .scrchinput {
-        width:65%;
+        width:60%;
         font-size: 14px;
         padding: 5px 8px;
     }
@@ -470,16 +480,22 @@ footer {
         min-width: 100%;
         margin-bottom: 10px;
     }
+ 
 }
 
 @media (min-width: 480px) and (max-width: 600px)  {
-.social-bar .csc ul {
-    font-size: 8%;
-    gap: 10px;
 
-}
+  .social-bar .csc ul {
+    gap:15px;
+ 
+  }
+  .social-bar .csc ul li a{
+    font-size:16px;
+     font-weight: bold;
+  }
+
       .video-overlay h4{
- padding: 5px 10px;
+ padding: 10px 15px;
  font-size: 15px;
        }
 
@@ -490,13 +506,15 @@ footer {
     
 
     .scrch {
-        top: 70%;
-        right:100px;
+      
+        top:60%;
+      
+        width: 80%;
       
   
     }
     .scrchinput {
-        width:65%;
+        width:60%;
         font-size: 14px;
         padding: 5px 8px;
     }
@@ -532,6 +550,7 @@ footer {
 
 /* --- الهواتف الكبيرة والتابلت الصغير: 600px – 900px --- */
 @media (min-width: 601px) and (max-width: 900px) {
+   
  
     header .logo h1 {
         font-size: 55px;
@@ -645,4 +664,33 @@ footer {
         min-width: 300px;
         margin-bottom: 30px;
     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
